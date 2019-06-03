@@ -1,0 +1,131 @@
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+
+
+@import url('font-awesome.css');
+@import url('animate.css');
+
+/*************************
+*******gallery******
+**************************/
+#gallery {
+	padding-top:70px;
+	padding-bottom:70px;
+	background:#f4f4f4;
+}
+#gallery img {
+	border-radius:8px;
+}
+
+.gallery {
+	margin-top:60px;
+	margin-bottom:30px;
+}
+
+#gallery .text-center {
+	padding-top:20px;
+	margin-bottom:50px;
+	padding-bottom:20px;
+}
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.img-responsive1{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.SGallery{
+	width: 280px;
+	height: 230px;
+	margin-top: 25px;
+	margin-right: 40px;
+	margin-left: 25px;
+}
+
+
+figure.effect-chico div.image-caption {
+	display: none;
+	opacity: 0.8;
+	width: 250px;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+	padding: 5px;
+	margin-left: 35px;
+}
+
+figure.effect-chico:hover div.image-caption{
+	display: block;
+	opacity: 0.8;
+	width: 250px;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+	padding: 5px;
+	margin-left: 35px;
+}
+
+.fullscreen-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+}
+
+.fullscreen-bg__video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+	.fullscreen-bg {
+		background: url('../img/6.jpg') center center / cover no-repeat;
+	}
+
+	.fullscreen-bg__video {
+		display: none;
+	}
+}
+
+.bar {
+	fill: green;
+}
+
+.highlight {
+	fill: red;
+}
+
+.title {
+	fill: blue;
+	font-weight: bold;
+}
+
